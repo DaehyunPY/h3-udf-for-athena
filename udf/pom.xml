@@ -5,16 +5,16 @@
     <groupId>aws.athena.udf.h3</groupId>
     <artifactId>aws-h3-athena-udf</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>aws-h3-athena-udf</name>
     <url>http://maven.apache.org</url>
 
     <properties>
-        <aws-athena-federation-sdk.version>2021.27.1</aws-athena-federation-sdk.version>
-        <h3.version>4.0.0</h3.version>
+        <aws-athena-federation-sdk.version>2022.47.1</aws-athena-federation-sdk.version>
+        <h3.version>4.1.1</h3.version>
         <cdk.version>2.40.0</cdk.version>
-        <junit.jupiter.version>5.8.1</junit.jupiter.version>
-        <junit.platform.version>1.8.1</junit.platform.version>
+        <junit.jupiter.version>5.10.3</junit.jupiter.version>
+        <junit.platform.version>1.10.3</junit.platform.version>
         <slf4j.version>1.7.30</slf4j.version>
     </properties>
 
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -36,7 +36,6 @@
                     <artifactId>commons-logging</artifactId>
                 </exclusion>
             </exclusions>
-
         </dependency>
 
         <dependency>
@@ -79,7 +78,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>3.13.0</version>
                 <configuration>
                     <release>11</release>
                 </configuration>
@@ -87,7 +86,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.6.0</version>
                 <configuration>
                     <createDependencyReducedPom>false</createDependencyReducedPom>
                     <filters>
